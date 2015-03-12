@@ -25,9 +25,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from d2lte device
 $(call inherit-product, device/samsung/d2lte/device.mk)
+#Inherit common omni stuff
+$(call inherit-product, vendor/omni/config/common.mk)
+#Inherit APNS
+$(call inherit-product, vendor/omni/config/cdma.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := full_d2lte
+PRODUCT_NAME := omni_d2lte
 PRODUCT_DEVICE := d2lte
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung

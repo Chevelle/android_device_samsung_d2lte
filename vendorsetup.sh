@@ -1,2 +1,2 @@
-add_lunch_combo cm_d2lte-eng
+add_lunch_combo omni_d2lte-userdebug
 
